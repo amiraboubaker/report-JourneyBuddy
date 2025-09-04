@@ -1,0 +1,522 @@
+\section{Introduction}
+
+Ce chapitre présente les différentes itérations de développement du projet sous forme de \textbf{quatre sprints essentiels}, chacun correspondant à un ou plusieurs cas d'utilisation majeurs. Chaque sprint comprend les étapes de planification, conception, modélisation UML, et développement avec les interfaces graphiques correspondantes.
+
+\section{Sprint 1 : Inscription, Authentification et Gestion de profil}
+
+Ce premier sprint a pour objectif la mise en place des fonctionnalités fondamentales d'accès à l'application : inscription, authentification et gestion du profil utilisateur
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|c|l|l|X|c|}
+\hline
+\textbf{Sprint} & \textbf{User Story} & \textbf{En tant que} & \textbf{Je veux} & \textbf{Priorité} \\
+\hline
+Sprint 1 & Inscription & Voyageur & Créer un compte pour personnaliser mon expérience & Haute \\
+\hline
+Sprint 1 & Authentification & Voyageur & M’authentifier afin d’accéder à mon espace personnel. & Haute \\
+\hline
+Sprint 1 & Gestion de profil & Voyageur & Modifier mes informations de profil (photo, téléphone, ville/pays, bio, adresse, mot de passe) & Moyenne \\
+\hline
+\end{tabularx}
+\caption{Sprint Backlog du Sprint 1}
+\end{table}
+
+% ================================
+% 1) Use Case
+% ================================
+\subsection{Diagramme de cas d’utilisation du Sprint 1}
+
+Ce diagramme illustre les interactions principales entre les acteurs et les fonctionnalités du sprint 1 (inscription, authentification et gestion du profil).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{diagrams/usecases/profile.png}
+    \caption{Diagramme de cas d'utilisation - Sprint 1}
+\end{figure}
+
+% ================================
+% 2) Conception détaillée
+% ================================
+\subsection{Conception détaillée}
+
+\subsubsection{Diagramme de classe}
+
+Le diagramme de classe structure les entités principales impliquées dans les opérations d’identification et de gestion du profil utilisateur.
+
+\begin{figure}[H]
+    \centering
+\includegraphics[width=0.95\textwidth]{diagrams/classes/profile.png}
+    \caption{Diagramme de classe - Sprint 1}
+\end{figure}
+
+
+\subsubsection{Diagramme de séquence}
+
+\subsubsubsection{Diagramme de séquence d'inscription}
+
+Ce diagramme présente les échanges entre les objets du système lors du processus d’inscription d’un utilisateur.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{diagrams/sequences/insc}
+    \caption{Diagramme de séquence - Inscription}
+\end{figure}
+
+\subsubsection{Diagramme de séquence d'authentification}
+
+Ce diagramme présente les échanges entre les objets du système lors du processus d’authentification d’un utilisateur.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{diagrams/sequences/auth.png}
+    \caption{Diagramme de séquence - Authentification}
+
+\end{figure}
+
+\subsubsection{Diagramme de séquence de Gestion du Profile}
+
+Ce diagramme présente les échanges entre les objets du système lors du processus de la gestion du profile.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{diagrams/sequences/profile.png}
+    \caption{Diagramme de séquence - Gestion du Profile}
+\end{figure}
+
+% ================================
+% 3) Développement
+% ================================
+\subsection{Développement du Sprint 1}
+
+Dans cette phase, les interfaces graphiques associées aux fonctionnalités du sprint sont développées. Elles permettent à l’utilisateur de s’inscrire, de s’authentifier et de gérer son profil de manière intuitive et sécurisée.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth, keepaspectratio]{ui/begin/lancement.jpg}
+    \caption{Interface graphique - Lancement de l'application}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth, keepaspectratio]{ui/begin/Explore.jpg}
+    \caption{Interface graphique - Exploration de l'application}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth, keepaspectratio]{ui/begin/get_started.jpg}
+    \caption{Interface graphique - Début de l'application}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth, keepaspectratio]{ui/begin/overboading1.jpg}
+    \caption{Interface graphique - Le premier écran de démarrage de l'application}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth,keepaspectratio]{ui/begin/overboarding2.jpg}
+    \caption{Interface graphique - Le deuxième écran de démarrage de l'application}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth, keepaspectratio]{ui/begin/overboarding3.jpg}
+    \caption{Interface graphique - Le troisième écran de démarrage de l'application}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth, keepaspectratio]{ui/begin/overboarding4.jpg}
+    \caption{Interface graphique - Le quatrième écran de démarrage de l'application}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ui/begin/insc.jpg}
+    \caption{Interface graphique - Formulaire d'inscription}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+     \includegraphics[width=0.5\textwidth]{ui/begin/fill_insc.jpg}
+    \caption{Interface graphique - Remplissage du Formulaire d'inscription}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ui/begin/login.jpg}
+    \caption{Interface graphique - Formulaire d'authentification}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+     \includegraphics[width=0.5\textwidth]{ui/begin/fill_login.jpg}
+    \caption{Interface graphique - Remplissage du Formulaire d'authentification}
+\end{figure}
+\newpage
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ui/begin/login_home.jpg}
+    \caption{Interface graphique - Interface Home}
+\end{figure}
+
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ui/settings/profile.jpg}
+    \caption{Interface graphique -  profile}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ui/settings/edit_profile.jpg}
+    \caption{Interface graphique - Formulaire Modifier Profile}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ui/settings/fill_profile.jpg}
+    \caption{Interface graphique - Remplissage du Formulaire Profile }
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ui/settings/updated_profile.jpg}
+    \caption{Interface graphique - Profile Modifié}
+\end{figure}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{../ui/settings/password.jpg}
+%     \caption{Interface graphique - Modifier Password}
+% \end{figure}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{../ui/settings/update_password.jpg}
+%     \caption{Interface graphique - Remplissage du Formulaire de Changer Password}
+% \end{figure}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{../ui/settings/fill_password.jpg}
+%     \caption{Interface graphique - Password Modifié}
+% \end{figure}
+
+
+% ================================
+% Conclusion Sprint 1
+% ================================
+\subsection*{Conclusion du Sprint 1}
+
+Le sprint 1 a permis de mettre en place les fonctionnalités essentielles d’accès à l’application, en intégrant à la fois la modélisation UML (cas d’utilisation, diagramme de classe et de séquence) et le développement des premières interfaces. Ces fondations assurent la continuité des prochains sprints.
+
+% ================================
+% Sprint 2
+% ================================
+
+\section{Sprint 2 : Création et Gestion de Voyage, Points d'intérêts et Alertes}
+
+Ce deuxième sprint a pour objectif la mise en place des fonctionnalités principales liées à la gestion du voyage. 
+Il permet aux utilisateurs de créer et gérer leurs voyages, de consulter des points d’intérêts, de gérer leurs favoris 
+et de consulter les alertes disponibles dans l’application.
+
+\usepackage{multirow} % add this in the preamble
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|l|l|l|c|}
+\hline
+\textbf{Sprint} & \textbf{User Story} & \textbf{En tant que} & \textbf{Je veux} & \textbf{Priorité} \\
+\hline
+\multirow{5}{*}{Sprint 2} & Création du voyage & Voyageur & Créer un voyage & Haute \\
+\cline{2-5}
+ & Gestion du voyage & Voyageur & Gérer mon voyage & Haute \\
+\cline{2-5}
+ & Consultation des points d'intérêts & Voyageur & Consulter des points d'intérêts & Moyenne \\
+\cline{2-5}
+ & Gestion des favoris & Voyageur & Gérer mes favoris & Moyenne \\
+\cline{2-5}
+ & Consultation des notifications internatiounaux culturels & Voyageur & Consulter des notifications internatiounaux culturels & Moyenne \\
+\hline
+\end{tabular}
+\caption{Sprint Backlog du Sprint 2}
+\end{table}
+
+
+% ================================
+% 1) Use Case
+% ================================
+\subsection{Diagramme de cas d’utilisation du Sprint 2}
+
+Ce diagramme illustre les interactions principales entre les acteurs et les fonctionnalités du sprint 2 
+(création et gestion de voyage, points d’intérêts, favoris et alertes).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{diagrams/usecases/trip.png}
+    \caption{Diagramme de cas d'utilisation - Sprint 2}
+\end{figure}
+
+% ================================
+% 2) Conception détaillée
+% ================================
+\subsection{Conception détaillée}
+
+\subsubsection{Diagramme de classe}
+
+Le diagramme de classe structure les entités principales impliquées dans les opérations de gestion du voyage 
+et des fonctionnalités associées (points d’intérêts, favoris, alertes).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{diagrams/classes/trip.png}
+    \caption{Diagramme de classe - Sprint 2}
+\end{figure}
+
+\subsubsection{Diagramme de séquence}
+
+Ces diagrammes présentent les échanges entre les objets du système lors des processus de création et gestion d’un voyage, 
+ainsi que la consultation des points d’intérêt et alertes.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{trip}
+    \caption{Diagramme de séquence - Création de voyage}
+    
+    \centering
+    \includegraphics[width=0.85\textwidth]{recommandation .png}
+    \caption{Diagramme de séquence - Recommandation des points d'intérêts }
+    
+    \centering
+    \includegraphics[width=0.85\textwidth]{favoris.png}
+    \caption{Diagramme de séquence - Gestion des favoris}
+\end{figure}
+
+% ================================
+% 3) Développement
+% ================================
+\subsection{Développement du Sprint 2}
+
+Dans cette phase, les interfaces graphiques associées aux fonctionnalités du sprint sont développées. 
+Elles permettent à l’utilisateur de créer et gérer ses voyages, de consulter les points d’intérêts, de gérer ses favoris 
+et de recevoir les alertes en toute simplicité.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{ui_trip_creation}
+    \caption{Interface graphique - Création d’un voyage}
+    
+    \centering  
+    \includegraphics[width=0.6\textwidth]{ui_trip_management}
+    \caption{Interface graphique - Gestion du voyage}
+    
+    \centering
+    \includegraphics[width=0.6\textwidth]{ui_poi}
+    \caption{Interface graphique - Consultation des points d’intérêts}
+    
+    \centering
+    \includegraphics[width=0.6\textwidth]{ui_alerts}
+    \caption{Interface graphique - Consultation les notifications internationaux culturels}
+\end{figure}
+
+% ================================
+% Conclusion Sprint 2
+% ================================
+\subsection*{Conclusion du Sprint 2}
+
+Le sprint 2 a permis de développer les fonctionnalités principales liées à la gestion de voyage, 
+en intégrant la modélisation UML (cas d’utilisation, diagramme de classe et de séquence) et 
+le développement des interfaces graphiques correspondantes. 
+Il constitue une étape clé dans l’évolution de l’application en enrichissant considérablement l’expérience utilisateur.
+
+% ================================
+% Sprint 3
+% ================================
+
+\section{Sprint 3 : Recommandations AI et Chatbot}
+
+Ce troisième sprint a pour objectif la mise en place des fonctionnalités intelligentes 
+qui enrichissent l’expérience utilisateur. 
+Il permet aux voyageurs de recevoir des recommandations personnalisées basées sur l’IA 
+et d’interagir avec un chatbot pour obtenir de l’assistance ou des conseils de voyage en temps réel.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|l|l|l|c|}
+\hline
+\textbf{Sprint} & \textbf{User Story} & \textbf{En tant que} & \textbf{Je veux} & \textbf{Priorité} \\
+\hline
+Sprint 3 & Consultation des recommandations AI & Voyageur & Consulter des recommandations personnalisées basées sur l’IA & Haute \\
+\hline
+Sprint 3 & Discussion avec un chatbot personnalisé & Voyageur & Discuter avec un chatbot intelligent pour obtenir de l’aide & Haute \\
+\hline
+\end{tabular}
+\caption{Sprint Backlog du Sprint 3}
+\end{table}
+
+% ================================
+% 1) Use Case
+% ================================
+\subsection{Diagramme de cas d’utilisation du Sprint 3}
+
+Ce diagramme illustre les interactions principales entre les voyageurs et les fonctionnalités intelligentes du sprint 3 
+(recommandations AI et chatbot).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{chatbot}
+    \caption{Diagramme de cas d'utilisation - Sprint 3}
+\end{figure}
+
+% ================================
+% 2) Conception détaillée
+% ================================
+\subsection{Conception détaillée}
+
+\subsubsection{Diagramme de classe}
+
+Le diagramme de classe structure les entités principales impliquées dans la génération des recommandations 
+et l’interaction avec le chatbot.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{chatbot}
+    \caption{Diagramme de classe - Sprint 3}
+\end{figure}
+
+\subsubsection{Diagramme de séquence}
+
+Ces diagrammes présentent les échanges entre les objets du système lors des processus de recommandation AI 
+et de dialogue avec le chatbot.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{recommandation}
+    \caption{Diagramme de séquence - Recommandations AI}
+    
+    \centering
+    \includegraphics[width=0.85\textwidth]{chatbot}
+    \caption{Diagramme de séquence - Interaction avec le chatbot}
+\end{figure}
+
+% ================================
+% 3) Développement
+% ================================
+\subsection{Développement du Sprint 3}
+
+Dans cette phase, les interfaces graphiques associées aux fonctionnalités intelligentes sont développées. 
+Elles permettent à l’utilisateur de consulter facilement des recommandations personnalisées 
+et d’interagir de manière fluide avec le chatbot.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{ui_ai_recommendations}
+    \caption{Interface graphique - Recommandations AI}
+    
+    \centering
+    \includegraphics[width=0.85\textwidth]{ui_chatbot}
+    \caption{Interface graphique - Chatbot personnalisé}
+\end{figure}
+
+% ================================
+% Conclusion Sprint 3
+% ================================
+\subsection*{Conclusion du Sprint 3}
+
+Le sprint 3 a introduit l’intelligence artificielle dans l’application, 
+en intégrant à la fois les recommandations personnalisées et un chatbot interactif. 
+Cette étape marque un tournant majeur dans l’évolution du projet, 
+apportant une véritable valeur ajoutée à l’expérience utilisateur 
+en rendant l’application plus intelligente et interactive.
+
+% ================================
+% Sprint 4
+% ================================
+
+\section{Sprint 4 : Finalisation UI/UX et Intégration Docker}
+
+Ce quatrième sprint a pour objectif de peaufiner l’expérience utilisateur à travers la finalisation UI/UX et de garantir la portabilité et la mise en production fluide 
+grâce à l’intégration Docker.  
+Ces deux étapes viennent consolider le projet et assurer sa pérennité technique et ergonomique.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|l|l|l|c|}
+\hline
+\textbf{Sprint} & \textbf{User Story} & \textbf{En tant que} & \textbf{Je veux} & \textbf{Priorité} \\
+\hline
+Sprint 4 & Avoir une expérience utilisateur optimisée & Voyageur & Naviguer dans l’application avec fluidité et cohérence visuelle & Haute \\
+\hline
+Sprint 4 & Déployer l’application dans un environnement stable & Développeur & Lancer l’application dans un conteneur portable et reproductible & Haute \\
+\hline
+\end{tabular}
+\caption{Sprint Backlog du Sprint 4}
+\end{table}
+
+% ================================
+% 1) Finalisation UI/UX
+% ================================
+\subsection{Finalisation UI/UX}
+
+\textbf{Bienfaits :}
+\begin{itemize}
+    \item Amélioration de l’ergonomie générale et de la fluidité de navigation.
+    \item Uniformisation du design (couleurs, polices, icônes) pour renforcer la cohérence visuelle.
+    \item Expérience utilisateur simplifiée et adaptée à différents types d’écrans.
+\end{itemize}
+
+\textbf{Démonstration :}  
+Les interfaces finales ci-dessous illustrent la cohérence graphique et l’ergonomie renforcée :
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.55\textwidth]{ui_final_dashboard}
+    \caption{Interface finale - Tableau de bord utilisateur}
+    
+    \centering
+    \includegraphics[width=0.55\textwidth]{ui_final_navigation}
+    \caption{Interface finale - Navigation optimisée}
+\end{figure}
+
+% ================================
+% 2) Intégration Docker
+% ================================
+\subsection{Intégration Docker}
+
+\textbf{Bienfaits :}
+\begin{itemize}
+    \item Portabilité : l’application peut s’exécuter sur n’importe quel environnement supportant Docker.
+    \item Reproductibilité : garantie que tous les développeurs et serveurs disposent du même environnement.
+    \item Déploiement simplifié : automatisation de l’installation et de la configuration.
+\end{itemize}
+
+\textbf{Démonstration :}  
+Les captures ci-dessous illustrent la mise en conteneur et le déploiement de l’application :
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{dockerfile}
+    \caption{Exemple de Dockerfile utilisé pour la conteneurisation}
+    
+    \centering
+    \includegraphics[width=0.7\textwidth]{docker_running}
+    \caption{Application en cours d’exécution dans un conteneur Docker}
+\end{figure}
+
+% ================================
+% Conclusion Sprint 4
+% ================================
+\subsection*{Conclusion du Sprint 4}
+
+Le sprint 4 a permis de livrer une application complète, 
+à la fois **ergonomique pour les utilisateurs finaux** et **robuste pour le déploiement technique**.  
+La finalisation UI/UX a apporté une meilleure fluidité et une cohérence visuelle, 
+tandis que l’intégration Docker a garanti la portabilité et la stabilité du projet.  
+Ce sprint clôture le cycle de développement en assurant la qualité globale de l’application, 
+prête à être utilisée et déployée dans des environnements variés.

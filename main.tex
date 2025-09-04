@@ -1,0 +1,86 @@
+\documentclass{rapportESPRIM}
+\usepackage{setspace}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\begin{document}
+\renewcommand{\contentsname}{Table des Matières}
+\pagenumbering{arabic}
+
+\fairepagedegarde
+
+% === Force a blank page after cover ===
+\clearpage
+\thispagestyle{empty}
+\null
+\clearpage
+
+%-------------- Pages préliminaires --------------
+
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}
+\setstretch{1.5}
+Avant tout, je tiens à exprimer ma plus profonde gratitude à toutes celles et ceux qui m'ont soutenu tout au long de ce parcours vers l'obtention de mon diplôme d'ingénieur.
+
+\textbf{À} ma famille bien-aimée, votre amour inébranlable, votre patience et vos encouragements ont été mon fondement. Cette réussite vous revient autant qu'à moi.
+
+\textbf{Je} tiens à adresser mes sincères remerciements à mes encadrants et professeurs pour leurs conseils précieux, leur expertise et leur accompagnement tout au long de mon parcours académique. Leur dévouement a contribué à façonner l'ingénieur que je deviens.
+
+\textbf{Un} remerciement particulier à l’ensemble du personnel administratif et technique qui a permis la concrétisation de ce programme. Votre soutien en coulisses a été crucial pour ma réussite.
+
+\textbf{À} mes collègues et amis, merci pour les épreuves partagées et les moments de joie au cours de ce parcours exigeant mais enrichissant.
+
+Ce diplôme d’ingénieur représente l’aboutissement d’un rêve de longue date, rendu possible grâce au soutien collectif de toutes les personnes mentionnées. Du fond du cœur, merci à vous tous.
+
+\chapter*{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+\setstretch{1.5}
+Ce rapport présente le développement de \textbf{JourneyBuddy}, une application mobile innovante d’assistance au voyage basée sur l’IA, conçue pour aider les voyageurs à planifier efficacement leurs séjours. L’application exploite l’intelligence artificielle pour fournir des recommandations personnalisées, optimiser les itinéraires et offrir des informations de voyage en temps réel.
+
+L'application Trip Assistant simplifie la planification grâce à l’automatisation de tâches complexes comme l’optimisation des parcours, les suggestions d’hébergement et la planification des activités. Grâce à l’intégration d’algorithmes d’apprentissage automatique, elle s’adapte aux préférences des utilisateurs et améliore progressivement ses suggestions.
+
+Les fonctionnalités clés incluent la génération intelligente d’itinéraires, la planification en fonction du budget, les recommandations d’expériences locales et les mises à jour en temps réel des conditions de voyage. Cette application représente une avancée majeure dans la technologie du voyage, combinant utilité pratique et IA de pointe pour offrir une expérience de planification fluide.
+
+Conçue avec une approche centrée sur l’utilisateur, Trip Assistant vise à réduire le stress lié à l’organisation des voyages tout en maximisant la satisfaction et l’efficacité du séjour. Ce projet démontre le potentiel des solutions basées sur l’intelligence artificielle pour transformer les secteurs traditionnels et améliorer concrètement l’expérience utilisateur.
+
+%-------------- Table des matières --------------
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\addcontentsline{toc}{chapter}{Liste des Figures}
+\listoffigures
+\clearpage
+
+\addcontentsline{toc}{chapter}{Liste des Tableaux}
+\listoftables
+\clearpage
+
+%------------ Corps du rapport ----------------
+
+% CHAPTER 1: Étude Générale du Projet
+\chapter{Étude Générale du Projet}
+\input{chapters/GeneralProjectStudy}
+
+% CHAPTER 2: Analyse et Spécification des Besoins
+\chapter{Analyse et Spécification des Besoins}
+\input{chapters/Analysis}
+
+% CHAPTER 3: Réalisation
+\chapter{Réalisation}
+\input{chapters/Conception}
+
+\clearpage
+
+\chapter*{Conclusion Générale}
+\addcontentsline{toc}{chapter}{Conclusion Générale}
+Ce rapport a documenté le processus de développement de l’application mobile \textbf{Trip Assistant}, depuis sa conception initiale jusqu’à son implémentation. Ce projet démontre comment l’intelligence artificielle peut être utilisée efficacement pour améliorer l’expérience de planification de voyage en offrant une assistance intelligente et personnalisée.
+
+Au cours de ce projet, j’ai acquis une expérience précieuse en développement mobile, en intégration de l’IA et en conception d’expérience utilisateur. Les défis rencontrés ont été des occasions d’améliorer mes compétences en résolution de problèmes et d’approfondir ma connaissance des pratiques modernes en ingénierie logicielle.
+
+L’application Trip Assistant représente non seulement une réussite technique, mais aussi une solution concrète aux difficultés rencontrées par les voyageurs. Les retours positifs des utilisateurs test confirment le potentiel de l’application pour rendre la planification de voyage plus efficace et agréable.
+
+Ce projet a joué un rôle clé dans mon évolution en tant qu’ingénieur, en me permettant de transformer des savoirs théoriques en une application réelle.
+
+\end{document}
